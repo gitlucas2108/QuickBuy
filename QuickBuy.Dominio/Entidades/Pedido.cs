@@ -30,10 +30,14 @@ namespace QuickBuy.Dominio.Entidades
             LimparMensagemValidacao();
 
             if (!ItensPedido.Any())
-                AdicionarCritica("Pedido não pode ficar sem item de pedido.");
+                AdicionarCritica("Crítica - Pedido não pode ficar sem item de pedido.");
 
             if (String.IsNullOrEmpty(CEP))
-                AdicionarCritica("Necessário Informar o CEP.");
+                AdicionarCritica("Crítica - Necessário Informar o CEP.");
+
+            if (FormaPagamentoId == 0)
+                AdicionarCritica("Não informado a forma de pagamento.")
+
              
              
 
