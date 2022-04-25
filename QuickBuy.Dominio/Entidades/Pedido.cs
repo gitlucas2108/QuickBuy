@@ -36,7 +36,7 @@ namespace QuickBuy.Dominio.Entidades
                 AdicionarCritica("Crítica - Necessário Informar o CEP.");
 
             if (FormaPagamentoId == 0)
-                AdicionarCritica("Não informado a forma de pagamento.")
+                AdicionarCritica("Não informado a forma de pagamento.");
 
              
              

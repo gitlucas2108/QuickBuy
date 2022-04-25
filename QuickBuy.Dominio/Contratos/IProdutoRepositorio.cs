@@ -10,3 +10,4 @@ namespace QuickBuy.Dominio.Contratos
 
     }
 }
+ 
