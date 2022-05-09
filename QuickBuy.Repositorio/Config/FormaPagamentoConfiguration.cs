@@ -10,6 +10,17 @@ namespace QuickBuy.Repositorio.Config
         {
             //throw new System.NotImplementedException();
             //builder.Haskey
+
+            //geralmente declara chave primaria primeiro
+            builder.HasKey(f => f.Id);
+
+            builder.Property(f => f.Nome)
+                   .IsRequired()
+                   .HasMaxLength(50);
+
+            builder.Property(i => i.Descricao)
+                   .IsRequired()
+                   .HasMaxLength(100);
         }
     }
 }

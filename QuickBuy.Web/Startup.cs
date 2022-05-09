@@ -31,7 +31,9 @@ namespace QuickBuy.Web
             var connectionString = Configuration.GetConnectionString("QuickBuyDB");
             
             //Faz uma chamada no services adicionando um o QuickBuyContexto para usar o MySql, além da string de cnx passa qual a biblioteca do contexto
-            services.AddDbContext<QuickBuyContexto>(option => option.UseMySql(connectionString,
+            services.AddDbContext<QuickBuyContexto>(option => 
+                                                              option.UseLazyLoadingProxies()
+                                                              .UseMySql(connectionString,
                                                                               m => m.MigrationsAssembly("QuickBuy.Repositorio"))); 
 
 
