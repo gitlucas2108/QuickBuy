@@ -1,43 +1,43 @@
-﻿using QuickBuy.Dominio.Enumerados;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿//using QuickBuy.Dominio.Enumerados;
+//using System;
+//using System.Collections.Generic;
+//using System.Text;
 
-namespace QuickBuy.Dominio.ObjetoDeValor
-{
-   public class FormaPagamento
-    {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string Descricao { get; set; }
-        public bool EhBoleto
-        {
-            get { return Id == (int)TipoFormaPagamentoEnum.Boleto; }
+//namespace QuickBuy.Dominio.ObjetoDeValor
+//{
+//   public class FormaPagamento 
+//    {
+//        public int Id { get; set; }
+//        public string Nome { get; set; }
+//        public string Descricao { get; set; }
+//        public bool EhBoleto
+//        {
+//            get { return Id == (int)TipoFormaPagamentoEnum.Boleto; }
 
-        }
-        public bool EhCartaoCredito
-        {
-            get { return Id == (int)TipoFormaPagamentoEnum.CartaoCredito; }
+//        }
+//        public bool EhCartaoCredito
+//        {
+//            get { return Id == (int)TipoFormaPagamentoEnum.CartaoCredito; }
 
-        }
+//        }
 
-        public bool EhCartaoDebito
-        {
-            get { return Id == (int)TipoFormaPagamentoEnum.CartaoDebito; }
+//        public bool EhCartaoDebito
+//        {
+//            get { return Id == (int)TipoFormaPagamentoEnum.CartaoDebito; }
 
-        }
-        public bool EhDeposito
-        {
-            get { return Id == (int)TipoFormaPagamentoEnum.Deposito; }
+//        }
+//        public bool EhDeposito
+//        {
+//            get { return Id == (int)TipoFormaPagamentoEnum.Deposito; }
 
-        }
+//        }
 
-        public bool NaoFoiDefinido
-        {
-            get { return Id == (int)TipoFormaPagamentoEnum.NaoDefinido; }
+//        public bool NaoFoiDefinido
+//        {
+//            get { return Id == (int)TipoFormaPagamentoEnum.NaoDefinido; }
 
-        }
+//        }
 
 
-    }
-}
+//    }
+//}

@@ -47,9 +47,9 @@ namespace QuickBuy.Repositorio.Config
                    .IsRequired()
                    .HasMaxLength(50);
 
-            builder.Property(ped => ped.FormaPagamento)
-                   .IsRequired()
-                   .HasMaxLength(50);
+            //builder.Property(ped => ped.FormaPagamento)
+            //       .IsRequired()
+            //       .HasMaxLength(50);
 
             builder.Property(ped => ped.FormaPagamentoId)
                    .IsRequired()

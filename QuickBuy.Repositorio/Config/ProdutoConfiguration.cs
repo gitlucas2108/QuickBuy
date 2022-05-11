@@ -26,7 +26,7 @@ namespace QuickBuy.Repositorio.Config
 
             builder.Property(p => p.Preco)
                    .IsRequired()
-                   //.HasColumnType("DOUBLE") //define o tipo de dado
+                   .HasColumnType("FLOAT") //define o tipo de dado
                    .HasMaxLength(50);            
 
         }

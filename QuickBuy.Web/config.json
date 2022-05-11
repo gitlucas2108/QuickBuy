@@ -2,12 +2,5 @@
   "Chave": "ValorChave",
   "ConnectionStrings": {
     "SqlServerConnection": "",
-    "QuickBuyDB": "server=localhost;uid=root;pwd=admin;database=QuickBuyDB"
+    "QuickBuyDB": "Server=DESKTOP-NBU4I31\\SQLEXPRESS;DataBase=QuickBuyDB;Integrated Security=SSPI"}
   }
-
-} 
-
-
-
-
-

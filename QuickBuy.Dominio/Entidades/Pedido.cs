@@ -1,4 +1,4 @@
-﻿using QuickBuy.Dominio.ObjetoDeValor;
+﻿//using QuickBuy.Dominio.ObjetoDeValor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace QuickBuy.Dominio.Entidades
         public string EndereCompleto { get; set; }
         public int NumeroEndereco { get; set; }
         public int FormaPagamentoId { get; set; }
-        public virtual FormaPagamento FormaPagamento { get; set; }
+        //public virtual FormaPagamento FormaPagamento { get; set; }
 
         /// <summary>
         /// Pedido deve ter pelo menos um ItemPedido

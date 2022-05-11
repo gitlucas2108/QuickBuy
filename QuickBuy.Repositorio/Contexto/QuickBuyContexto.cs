@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuickBuy.Dominio.Entidades;
-using QuickBuy.Dominio.ObjetoDeValor;
+//using QuickBuy.Dominio.ObjetoDeValor;
 using QuickBuy.Repositorio.Config;
 
 namespace QuickBuy.Repositorio.Contexto
@@ -11,7 +11,7 @@ namespace QuickBuy.Repositorio.Contexto
         public DbSet<Produto> Produtos { get; set; }        
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<ItemPedido> ItensPedidos { get; set; }
-        public DbSet<FormaPagamento> FormasPagamentos { get; set; }
+        //public DbSet<FormaPagamento> FormasPagamentos { get; set; }
 
         public QuickBuyContexto(DbContextOptions options) : base(options)
         {
@@ -25,7 +25,7 @@ namespace QuickBuy.Repositorio.Contexto
             modelBuilder.ApplyConfiguration(new ProdutoConfiguration());
             modelBuilder.ApplyConfiguration(new PedidoConfiguration());
             modelBuilder.ApplyConfiguration(new ItemPedidoConfiguration());
-            modelBuilder.ApplyConfiguration(new FormaPagamentoConfiguration());
+            //modelBuilder.ApplyConfiguration(new FormaPagamentoConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
